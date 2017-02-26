@@ -18,14 +18,20 @@ $(function () {
 
 
     //根据屏幕设置canvas大小
-    //switch (true){
-    //    case window.innerWidth<1600:
-    //        cas.style.width="1400";
-    //        break;
-    //    case window.innerWidth>=1600:
-    //        cas.style.width="1600";
-    //        break;
-    //}
+
+        switch (true){
+            case window.innerWidth<750:
+                cas.width="750";
+                break;
+            case window.innerWidth<1600:
+                cas.width="1336";
+                break;
+            case window.innerWidth>=1600:
+                cas.width="1600";
+                break;
+        }
+
+
 
 
 

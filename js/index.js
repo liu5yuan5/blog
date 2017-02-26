@@ -4,15 +4,29 @@
 $(function () {
     var fullPages=document.getElementById("fullpage");
     var menu=document.getElementById("menu");
+    var cas=document.getElementById("cas");
     $("#menu>li").on("mouseover", function () {
         $(this).addClass('animated tada');
     })
     $("#menu>li").on("mouseout", function () {
         $(this).removeClass('animated tada');
     })
+
     var circleMenu=document.getElementById("circleMenu");
     fullPage(fullPages,menu);
     fullPage(fullPages,circleMenu);
+
+
+    //根据屏幕设置canvas大小
+    //switch (true){
+    //    case window.innerWidth<1600:
+    //        cas.style.width="1400";
+    //        break;
+    //    case window.innerWidth>=1600:
+    //        cas.style.width="1600";
+    //        break;
+    //}
+
 
 
     window.onscroll= function () {
@@ -56,7 +70,7 @@ $(function () {
         //是否支持键盘控制
         keyboardControl : true,
         //是否支持滚轮
-        mousewheelControl : true,
+        //mousewheelControl : true,
         // 如果需要前进后退按钮
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -64,12 +78,20 @@ $(function () {
     })
 
 
-    circle(300,100,80,288);
-    circle(500,100,80,10);
-    circle(700,100,80,10);
-    circle(900,100,80,10);
-    circle(1100,100,80,10);
-    circle(1300,100,80,10);
+    circle(200,100,80,288);
+    circle(400,100,80,10);
+    circle(600,100,80,10);
+    circle(800,100,80,10);
+    circle(1000,100,80,10);
+    circle(1200,100,80,10);
+
+    circle(200,350,80,288);
+    circle(400,350,80,10);
+    circle(600,350,80,10);
+    circle(800,350,80,10);
+    circle(1000,350,80,10);
+    circle(1200,350,80,10);
+
     function circle(x,y,r,reg){
         var canvas=document.getElementById("cas");
         var ctx=canvas.getContext("2d");

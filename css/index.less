@@ -3,6 +3,7 @@
   width: 100%;
 
   .section{
+    width: 100%;
     height: 900px;
     &:nth-child(1){
       background:url("../images/school.jpg") no-repeat center top;
@@ -151,56 +152,115 @@
     }
     &:nth-child(4){
       background-color:#34353a ;
-      height: 400px;
+      height: 700px;
       padding-top: 50px;
       .mySkill{
         position: relative;
-        >div{
+        canvas{
+          position: absolute;
+          left: 10px;
+          //transform: translateX(-50%);
+        }
+        .firstLine{
           position: absolute;
           top: 128px;
           color: #fff;
           font-size: 40px;
+          z-index: 50;
           &:nth-of-type(1){
-            left: 280px;
+            left: 180px;
           }
           &:nth-of-type(2){
-            left: 480px;
+            left: 400px;
           }
           &:nth-of-type(3){
-            left: 680px;
+            left: 600px;
           }
           &:nth-of-type(4){
-            left: 880px;
+            left: 800px;
           }
           &:nth-of-type(5){
-            left: 1080px;
+            left: 1000px;
           }
           &:nth-of-type(6){
-            left: 1280px;
+            left: 1200px;
           }
         }
-        >p{
+        .firstLineP{
           position: absolute;
-          bottom: 70px;
+          top: 240px;
           color: #fff;
           font-size: 40px;
+          z-index: 50;
+          width: 200px;
           &:nth-of-type(1){
-            left: 260px;
+            left: 120px;
           }
           &:nth-of-type(2){
-            left: 480px;
+            left: 330px;
           }
           &:nth-of-type(3){
-            left: 680px;
+            left: 540px;
           }
           &:nth-of-type(4){
-            left: 880px;
+            left: 750px;
           }
           &:nth-of-type(5){
-            left: 1080px;
+            left: 970px;
           }
           &:nth-of-type(6){
-            left: 1280px;
+            left: 1140px;
+          }
+        }
+        .secondLine{
+          position: absolute;
+          top: 375px;
+          color: #fff;
+          font-size: 40px;
+          z-index: 50;
+          &:nth-of-type(7){
+            left: 180px;
+          }
+          &:nth-of-type(8){
+            left: 400px;
+          }
+          &:nth-of-type(9){
+            left: 600px;
+          }
+          &:nth-of-type(10){
+            left: 800px;
+          }
+          &:nth-of-type(11){
+            left: 1000px;
+          }
+          &:nth-of-type(12){
+            left: 1200px;
+          }
+        }
+        .secondLineP{
+          position: absolute;
+          top: 490px;
+          color: #fff;
+          font-size: 40px;
+          z-index: 50;
+          width: 150px;
+          &:nth-of-type(7){
+            left: 120px;
+          }
+          &:nth-of-type(8){
+            left: 320px;
+          }
+          &:nth-of-type(9){
+            left: 580px;
+          }
+          &:nth-of-type(10){
+            left: 750px;
+          }
+          &:nth-of-type(11){
+            left: 940px;
+          }
+          &:nth-of-type(12){
+            left: 1120px;
           }
         }
         h1{

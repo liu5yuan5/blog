@@ -33,8 +33,6 @@ $(function () {
 
 
 
-
-
     window.onscroll= function () {
         if(window.pageYOffset>menu.offsetTop){
             menu.className="fixed";

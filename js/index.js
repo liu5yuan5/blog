@@ -17,7 +17,7 @@ $(function () {
     fullPage(fullPages,circleMenu);
 
 
-    //¸ù¾ÝÆÁÄ»ÉèÖÃcanvas´óÐ¡
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½canvasï¿½ï¿½Ð¡
 
         switch (true){
             case window.innerWidth<750:
@@ -43,23 +43,23 @@ $(function () {
     }
 
     var mySwiper = new Swiper ('.swiper-container', {
-        //Ë®Æ½»¹ÊÇ´¹Ö±£¬vertical
+        //Ë®Æ½ï¿½ï¿½ï¿½Ç´ï¿½Ö±ï¿½ï¿½vertical
         direction: 'horizontal',
 //            direction: 'vertical',
         loop: true,
-        //×î³õÊÇµÚ¼¸Ò³0±íÊ¾µÚÒ»Ò³
+        //ï¿½ï¿½ï¿½ï¿½ÇµÚ¼ï¿½Ò³0ï¿½ï¿½Ê¾ï¿½ï¿½Ò»Ò³
         initialSlide :0,
-        // Èç¹ûÐèÒª·ÖÒ³Æ÷
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ò³ï¿½ï¿½
         pagination: '.swiper-pagination',
-        //µã»÷·ÖÒ³Æ÷µÄÊ±ºòÊÇ·ñÇÐ»»
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ð»ï¿½
         paginationClickable :true,
-        //ÊÇ·ñÒª×Ô¶¯²¥·Å£¬ºóÃæ¸ú²¥·ÅÊ±¼ä²î
+        //ï¿½Ç·ï¿½Òªï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½
         autoplay : 3000,
-        //ÓÃ»§²Ù×÷¹ýºóÊÇ·ñÍ£Ö¹»¬¶¯
+        //ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í£Ö¹ï¿½ï¿½ï¿½ï¿½
         autoplayDisableOnInteraction : false,
-        //»¬¶¯Ò»ÏÂµÄÊ±¼ä
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Âµï¿½Ê±ï¿½ï¿½
         speed:300,
-        //Êó±ê·ÅÉÏÈ¥±ä³ÉÐ¡ÊÖ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½
         grabCursor : true,
         effect : 'coverflow',
         slidesPerView: 2,
@@ -71,11 +71,11 @@ $(function () {
             modifier: 2,
             slideShadows : true
         },
-        //ÊÇ·ñÖ§³Ö¼üÅÌ¿ØÖÆ
+        //ï¿½Ç·ï¿½Ö§ï¿½Ö¼ï¿½ï¿½Ì¿ï¿½ï¿½ï¿½
         keyboardControl : true,
-        //ÊÇ·ñÖ§³Ö¹öÂÖ
+        //ï¿½Ç·ï¿½Ö§ï¿½Ö¹ï¿½ï¿½ï¿½
         //mousewheelControl : true,
-        // Èç¹ûÐèÒªÇ°½øºóÍË°´Å¥
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÇ°ï¿½ï¿½ï¿½ï¿½ï¿½Ë°ï¿½Å¥
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
 
@@ -83,18 +83,18 @@ $(function () {
 
 
     circle(200,100,80,288);
-    circle(400,100,80,10);
-    circle(600,100,80,10);
-    circle(800,100,80,10);
-    circle(1000,100,80,10);
-    circle(1200,100,80,10);
+    circle(400,100,80,252);
+    circle(600,100,80,120);
+    circle(800,100,80,252);
+    circle(1000,100,80,252);
+    circle(1200,100,80,120);
 
-    circle(200,350,80,288);
-    circle(400,350,80,10);
-    circle(600,350,80,10);
-    circle(800,350,80,10);
-    circle(1000,350,80,10);
-    circle(1200,350,80,10);
+    circle(200,350,80,216);
+    circle(400,350,80,288);
+    circle(600,350,80,252);
+    circle(800,350,80,216);
+    circle(1000,350,80,120);
+    circle(1200,350,80,252);
 
     function circle(x,y,r,reg){
         var canvas=document.getElementById("cas");

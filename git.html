@@ -1,0 +1,85 @@
+
+查看配置:git config --list
+
+跳过使用暂存区:git commit -a -m 
+
+查看远程分支:git remote -v
+
+查看提交历史:git log
+
+强制覆盖本地修改：git reset --hard
+
+git push --set-upstream origin bak-2017-11-8 推送到远程分支
+
+git branch newbranch DEV_Cost_Management_center-pc_201701051_01 以远程tag创建本地分支
+
+项目初始时获取前端代码:
+ git clone https://git.oschina.net/yudian/yudian-frontend.git
+
+ 从远程仓库获取分支代码：git fetch origin bsbank:bsbank
+
+ 切换到分支：git checkout bsbank
+
+新建分支sampleBranch，在该新分支上进行开发工作:
+ git checkout -b sampleBranch
+
+开发完成后，需将代码推送到服务器上时，首先在本地commit修改的代码:
+ git add . 
+ git commit -m "I commit this code for the sample function bug fix"
+
+切换到master分支，并拉取服务器上的最新代码:
+ git checkout master
+ git pull
+
+重新切换到sampleBranch, rebase到最新的master分支上，从而让自己的代码修改是基于最新的服务器端代码来做的:
+ git rebase master
+
+ 如果上一步rebase出现CONFLICT错误，则用文本编辑器打开出现CONFLICT的相应文件，找到标注冲突的地方(搜索"<<<<<<")，然后手工修改冲突处代码，以确定最后代码的内容。
+ 修改所有出现CONFLICT的文件后，将其添加为可commit状态:
+   git add .
+
+ 继续rebase操作:
+   git rebase —continue
+
+ 如果在"rebase继续"操作中又出现CONFLICT，则重复进行上述"找到CONCLICT -> 修改文件 -> git add -> git rebase —continue"的操作
+git rebase成功后，将本地的代码推送到服务器:
+
+ git push origin sampleBranch
+ 如果推送出错, 在当前的sampleBranch的基础上新建分支，然后继续推送:
+ git checkout -b sampleBranch2
+ git push origin sampleBranch2
+
+ git reset --hard  放弃本地修改
+
+ git stash 不用提交本地修改来更新最新代码
+ git stash pop
+
+git config --global credential.helper store
+
+git 打tag
+git tag -a 'sss' -m ''
+git push origin 'sss'
+
+git stash
+
+git add .
+
+接着用git stash把这些改动搁置。
+
+git stash
+
+到这里，当前工作平台就回复到改动之前了。该干嘛干嘛，此处省略1万字。
+
+需要找回之前搁置的改动继续先前的工作了？
+
+git stash apply 即可。
+
+也可以用 git stash list 来查看所有的搁置版本（可能搁置了很多次，最好不要这样，容易搞混）
+
+在出现一个搁置栈的情况下，比如如果你想找回栈中的第2个，可以用 git stash apply stash@{1}
+
+如果想找回第1个，可以用 git stash pop
+
+如果想删除一个stash，git stash drop <id></id>
+
+删除所有stash，git stash clear

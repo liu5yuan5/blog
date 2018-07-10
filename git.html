@@ -9,11 +9,17 @@
 
 撤销未暂存文件的修改:git checkout -- a.txt
 
+添加远程仓库:git remote add origin git@code.corp.rs.com:h5/cost_center-pc.git
+
+远程仓库的重命名:git remote rename redStar red
+
+远程仓库的删除:git remote rm redStar
+
 强制覆盖本地修改：git reset --hard
 
-git push --set-upstream origin bak-2017-11-8 推送到远程分支
+推送到远程分支: git push --set-upstream origin bak-2017-11-8 
 
-git branch newbranch DEV_Cost_Management_center-pc_201701051_01 以远程tag创建本地分支
+以远程tag创建本地分支: git branch newbranch DEV_Cost_Management_center-pc_201701051_01  
 
 项目初始时获取前端代码:
  git clone https://git.oschina.net/yudian/yudian-frontend.git

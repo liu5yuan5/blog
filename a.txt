@@ -5,3 +5,4 @@ s
 asd
 asd
 as
+git cherry-pick <commitID>
